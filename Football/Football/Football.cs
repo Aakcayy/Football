@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Football
+namespace Football1
 {
     public interface Irabona
     {
@@ -51,22 +51,35 @@ namespace Football
         {
             MessageBox.Show("Top kapma,top yerdeyken bir oyuncunun topu rakibinden almaya çalışması ve başarmasıdır.");
         }
+        
     }
-    abstract class Futbolcu
+    abstract class Futbolcu:yetenek
     {
-        private string isim, soyad, mevki,uyruk;
-        private double piyasadegeri;
-      
-        public void Bilgiler(string isim,string soyad,string mevki,string uyruk,int piyasadegeri)
+        public string isim, tamadi, mevki,uyruk;
+        public double piyasadegeri;
+       
+        public  string oyuncu(string isim, string tamadi, string mevki, string uyruk, double piyasadegeri)
         {
             this.isim = isim;
-            this.soyad = soyad;
+            this.tamadi = tamadi;
             this.mevki = mevki;
             this.uyruk = uyruk;
             this.piyasadegeri = piyasadegeri;
+            Kapma("");
+            string bilgi = $"Oyuncu Bilgileri:\n\nİsim: {isim}\nTam adı: {tamadi}\nMevki: {mevki}\nUyruk: {uyruk}\nPiyasa Değeri: {piyasadegeri}.000 €";
+            MessageBox.Show(bilgi);
+            return bilgi;
         }
-        public abstract void oyuncu();
         
     }
-    
+
+    internal class Kaleci : Futbolcu //kaleci aynı zamanda bir futbolcudur
+    {
+        public Kaleci()
+        {
+         
+          
+        }
+    }
+
 }

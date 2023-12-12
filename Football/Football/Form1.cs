@@ -4,20 +4,23 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Football;
+using Football1;
 
 namespace Football
 {
     public partial class Form1 : Form
     {
+        yetenek football1;
+        Kaleci kaleci;
         public Form1()
         {
             InitializeComponent();
-            Football.yetenek futbol = new Football.yetenek();
-
+            football1 = new yetenek();
+            kaleci= new Kaleci();
 
         }
 
@@ -26,10 +29,13 @@ namespace Football
             
         }
 
-        private void btnKaleci_Click(object sender, EventArgs e)
+        public void btnKaleci_Click(object sender, EventArgs e)
         {
-            Football.yetenek futbol = new Football.yetenek();
+           kaleci.oyuncu("Fabri", "Fabri Agusto Ramirez", "Kaleci", "İspanya", 100);
             
+
+
         }
+
     }
 }
