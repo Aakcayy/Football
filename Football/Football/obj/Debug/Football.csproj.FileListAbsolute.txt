@@ -1,0 +1,10 @@
+C:\Users\ahmet\Desktop\Proglama\Ders-9\Football\Football\Football\bin\Debug\Football.exe.config
+C:\Users\ahmet\Desktop\Proglama\Ders-9\Football\Football\Football\bin\Debug\Football.exe
+C:\Users\ahmet\Desktop\Proglama\Ders-9\Football\Football\Football\bin\Debug\Football.pdb
+C:\Users\ahmet\Desktop\Proglama\Ders-9\Football\Football\Football\obj\Debug\Football.csproj.AssemblyReference.cache
+C:\Users\ahmet\Desktop\Proglama\Ders-9\Football\Football\Football\obj\Debug\Football.Form1.resources
+C:\Users\ahmet\Desktop\Proglama\Ders-9\Football\Football\Football\obj\Debug\Football.Properties.Resources.resources
+C:\Users\ahmet\Desktop\Proglama\Ders-9\Football\Football\Football\obj\Debug\Football.csproj.GenerateResource.cache
+C:\Users\ahmet\Desktop\Proglama\Ders-9\Football\Football\Football\obj\Debug\Football.csproj.CoreCompileInputs.cache
+C:\Users\ahmet\Desktop\Proglama\Ders-9\Football\Football\Football\obj\Debug\Football.exe
+C:\Users\ahmet\Desktop\Proglama\Ders-9\Football\Football\Football\obj\Debug\Football.pdb
