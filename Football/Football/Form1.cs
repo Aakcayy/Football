@@ -16,14 +16,20 @@ namespace Football
         public Form1()
         {
             InitializeComponent();
-      
+            Football.yetenek futbol = new Football.yetenek();
+
 
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-           
-     
+            
+        }
+
+        private void btnKaleci_Click(object sender, EventArgs e)
+        {
+            Football.yetenek futbol = new Football.yetenek();
+            
         }
     }
 }

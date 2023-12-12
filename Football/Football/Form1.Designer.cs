@@ -28,13 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.btnKaleci = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // btnKaleci
+            // 
+            this.btnKaleci.Location = new System.Drawing.Point(65, 510);
+            this.btnKaleci.Name = "btnKaleci";
+            this.btnKaleci.Size = new System.Drawing.Size(93, 49);
+            this.btnKaleci.TabIndex = 0;
+            this.btnKaleci.Text = "Fabri";
+            this.btnKaleci.UseVisualStyleBackColor = true;
+            this.btnKaleci.Click += new System.EventHandler(this.btnKaleci_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1032, 800);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(1599, 1055);
+            this.Controls.Add(this.btnKaleci);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -43,6 +57,8 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnKaleci;
     }
 }
 
