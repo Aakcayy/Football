@@ -34,6 +34,12 @@
             this.btnSolStoper = new System.Windows.Forms.Button();
             this.btnSagStoper = new System.Windows.Forms.Button();
             this.btnSagBek = new System.Windows.Forms.Button();
+            this.btnÜÇ = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnKaleci
@@ -82,12 +88,72 @@
             this.btnSagBek.Text = "Beck";
             this.btnSagBek.UseVisualStyleBackColor = true;
             // 
+            // btnÜÇ
+            // 
+            this.btnÜÇ.Location = new System.Drawing.Point(373, 398);
+            this.btnÜÇ.Name = "btnÜÇ";
+            this.btnÜÇ.Size = new System.Drawing.Size(95, 42);
+            this.btnÜÇ.TabIndex = 5;
+            this.btnÜÇ.Text = "Atiba";
+            this.btnÜÇ.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(382, 652);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(95, 42);
+            this.button2.TabIndex = 6;
+            this.button2.Text = "Marcelo";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(500, 203);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(95, 42);
+            this.button3.TabIndex = 7;
+            this.button3.Text = "Marcelo";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(534, 500);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(95, 42);
+            this.button4.TabIndex = 8;
+            this.button4.Text = "Marcelo";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(500, 823);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(95, 42);
+            this.button5.TabIndex = 9;
+            this.button5.Text = "Marcelo";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(688, 500);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(95, 42);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Marcelo";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1599, 1055);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnÜÇ);
             this.Controls.Add(this.btnSagBek);
             this.Controls.Add(this.btnSagStoper);
             this.Controls.Add(this.btnSolStoper);
@@ -107,6 +173,12 @@
         private System.Windows.Forms.Button btnSolStoper;
         private System.Windows.Forms.Button btnSagStoper;
         private System.Windows.Forms.Button btnSagBek;
+        private System.Windows.Forms.Button btnÜÇ;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button1;
     }
 }
 

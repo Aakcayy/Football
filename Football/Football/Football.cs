@@ -58,26 +58,43 @@ namespace Football1
         public string isim, tamadi, mevki,uyruk;
         public double piyasadegeri;
        
-        public  string oyuncu(string isim, string tamadi, string mevki, string uyruk, double piyasadegeri)
+        public  void oyuncu(string isim, string tamadi, string mevki, string uyruk, double piyasadegeri)
         {
             this.isim = isim;
             this.tamadi = tamadi;
             this.mevki = mevki;
             this.uyruk = uyruk;
             this.piyasadegeri = piyasadegeri;
-            string bilgi = $"Oyuncu Bilgileri:\n\nİsim: {isim}\nTam adı: {tamadi}\nMevki: {mevki}\nUyruk: {uyruk}\nPiyasa Değeri: {piyasadegeri}.000 €";
-            MessageBox.Show(bilgi);
-            return bilgi;
+           
+
+            DialogResult result = MessageBox.Show("Kaleci özeliğini görmek istiyor  musunuz?", "Oyuncu Profili", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (result == DialogResult.OK)
+            {
+                this.oyuncu("Fabri", "Fabri Agusto Ramirez", "Kaleci", "İspanya", 100.000);
+                string bilgi = $"Oyuncu Bilgileri:\n\nİsim: {isim}\nTam adı: {tamadi}\nMevki: {mevki}\nUyruk: {uyruk}\nPiyasa Değeri: {piyasadegeri}.000 €";
+                MessageBox.Show(bilgi);
+            }
+            else
+            {
+                // Kullanıcı "Hayır" seçeneğini seçerse, isteğinize göre başka bir işlem yapabilirsiniz.
+                Kapma("");
+            }
+
+
+         
+           
         }
         
     }
 
     internal class Kaleci : Futbolcu //kaleci aynı zamanda bir futbolcudur
     {
+       
         public Kaleci()
         {
-         
+
           
+
         }
     }
 
