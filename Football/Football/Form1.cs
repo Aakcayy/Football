@@ -16,11 +16,13 @@ namespace Football
     {
         yetenek football1;
         Kaleci kaleci;
+        int secim;
         public Form1()
         {
             InitializeComponent();
             football1 = new yetenek();
             kaleci= new Kaleci();
+           
 
         }
 
@@ -31,8 +33,30 @@ namespace Football
 
         public void btnKaleci_Click(object sender, EventArgs e)
         {
-           kaleci.oyuncu("Fabri", "Fabri Agusto Ramirez", "Kaleci", "İspanya", 100);
-            
+           /* Console.WriteLine("1-Özellik\n2-Bilgiler");
+            secim = Convert.ToInt16(Console.ReadLine());
+            if (secim==1)
+            {
+                football1.Kapma("");
+            }
+            else if (secim==2) 
+            {
+                kaleci.oyuncu("Fabri", "Fabri Agusto Ramirez", "Kaleci", "İspanya", 100);
+            }*/
+
+            DialogResult result = MessageBox.Show("Kaleci bilgilerini göstermek istiyor musunuz?", "Kaleci Seçimi", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                kaleci.oyuncu("Fabri", "Fabri Agusto Ramirez", "Kaleci", "İspanya", 100.000);
+               
+            }
+            else
+            {
+                // Kullanıcı "Hayır" seçeneğini seçerse, isteğinize göre başka bir işlem yapabilirsiniz.
+                football1.Kapma("");
+            }
+
 
 
         }

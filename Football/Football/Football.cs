@@ -65,7 +65,6 @@ namespace Football1
             this.mevki = mevki;
             this.uyruk = uyruk;
             this.piyasadegeri = piyasadegeri;
-            Kapma("");
             string bilgi = $"Oyuncu Bilgileri:\n\nİsim: {isim}\nTam adı: {tamadi}\nMevki: {mevki}\nUyruk: {uyruk}\nPiyasa Değeri: {piyasadegeri}.000 €";
             MessageBox.Show(bilgi);
             return bilgi;
