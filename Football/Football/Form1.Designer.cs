@@ -34,12 +34,23 @@
             this.btnSolStoper = new System.Windows.Forms.Button();
             this.btnSagStoper = new System.Windows.Forms.Button();
             this.btnSagBek = new System.Windows.Forms.Button();
-            this.btnÜÇ = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btn6numara = new System.Windows.Forms.Button();
+            this.btn8numara = new System.Windows.Forms.Button();
+            this.btnSolKanat = new System.Windows.Forms.Button();
+            this.btn10numara = new System.Windows.Forms.Button();
+            this.btnSağKanat = new System.Windows.Forms.Button();
+            this.btnForvet = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.btnForvet2 = new System.Windows.Forms.Button();
+            this.btnSagKanat = new System.Windows.Forms.Button();
+            this.btnSolKanat2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btn6Numara2 = new System.Windows.Forms.Button();
+            this.btnSagBek2 = new System.Windows.Forms.Button();
+            this.btnSagStoper2 = new System.Windows.Forms.Button();
+            this.btnSolBek2 = new System.Windows.Forms.Button();
+            this.btnSolBek3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnKaleci
@@ -70,6 +81,7 @@
             this.btnSolStoper.TabIndex = 2;
             this.btnSolStoper.Text = "Marcelo";
             this.btnSolStoper.UseVisualStyleBackColor = true;
+            this.btnSolStoper.Click += new System.EventHandler(this.btnSolStoper_Click);
             // 
             // btnSagStoper
             // 
@@ -79,6 +91,7 @@
             this.btnSagStoper.TabIndex = 3;
             this.btnSagStoper.Text = "Pepe";
             this.btnSagStoper.UseVisualStyleBackColor = true;
+            this.btnSagStoper.Click += new System.EventHandler(this.btnSagStoper_Click);
             // 
             // btnSagBek
             // 
@@ -88,73 +101,201 @@
             this.btnSagBek.TabIndex = 4;
             this.btnSagBek.Text = "Beck";
             this.btnSagBek.UseVisualStyleBackColor = true;
+            this.btnSagBek.Click += new System.EventHandler(this.btnSagBek_Click);
             // 
-            // btnÜÇ
+            // btn6numara
             // 
-            this.btnÜÇ.Location = new System.Drawing.Point(373, 398);
-            this.btnÜÇ.Name = "btnÜÇ";
-            this.btnÜÇ.Size = new System.Drawing.Size(95, 42);
-            this.btnÜÇ.TabIndex = 5;
-            this.btnÜÇ.Text = "Atiba";
-            this.btnÜÇ.UseVisualStyleBackColor = true;
+            this.btn6numara.Location = new System.Drawing.Point(373, 398);
+            this.btn6numara.Name = "btn6numara";
+            this.btn6numara.Size = new System.Drawing.Size(95, 42);
+            this.btn6numara.TabIndex = 5;
+            this.btn6numara.Text = "Atiba";
+            this.btn6numara.UseVisualStyleBackColor = true;
+            this.btn6numara.Click += new System.EventHandler(this.btnÜÇ_Click);
             // 
-            // button2
+            // btn8numara
             // 
-            this.button2.Location = new System.Drawing.Point(382, 652);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(95, 42);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Marcelo";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn8numara.Location = new System.Drawing.Point(382, 652);
+            this.btn8numara.Name = "btn8numara";
+            this.btn8numara.Size = new System.Drawing.Size(95, 42);
+            this.btn8numara.TabIndex = 6;
+            this.btn8numara.Text = "Oğuzhan";
+            this.btn8numara.UseVisualStyleBackColor = true;
+            this.btn8numara.Click += new System.EventHandler(this.btn8numara_Click);
             // 
-            // button3
+            // btnSolKanat
             // 
-            this.button3.Location = new System.Drawing.Point(500, 203);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(95, 42);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Marcelo";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnSolKanat.Location = new System.Drawing.Point(500, 203);
+            this.btnSolKanat.Name = "btnSolKanat";
+            this.btnSolKanat.Size = new System.Drawing.Size(95, 42);
+            this.btnSolKanat.TabIndex = 7;
+            this.btnSolKanat.Text = "Cenk";
+            this.btnSolKanat.UseVisualStyleBackColor = true;
+            this.btnSolKanat.Click += new System.EventHandler(this.btnSolKanat_Click);
             // 
-            // button4
+            // btn10numara
             // 
-            this.button4.Location = new System.Drawing.Point(534, 500);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(95, 42);
-            this.button4.TabIndex = 8;
-            this.button4.Text = "Marcelo";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btn10numara.Location = new System.Drawing.Point(533, 539);
+            this.btn10numara.Name = "btn10numara";
+            this.btn10numara.Size = new System.Drawing.Size(95, 42);
+            this.btn10numara.TabIndex = 8;
+            this.btn10numara.Text = "Talisca";
+            this.btn10numara.UseVisualStyleBackColor = true;
+            this.btn10numara.Click += new System.EventHandler(this.btn10numara_Click);
             // 
-            // button5
+            // btnSağKanat
             // 
-            this.button5.Location = new System.Drawing.Point(500, 823);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(95, 42);
-            this.button5.TabIndex = 9;
-            this.button5.Text = "Marcelo";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnSağKanat.Location = new System.Drawing.Point(500, 823);
+            this.btnSağKanat.Name = "btnSağKanat";
+            this.btnSağKanat.Size = new System.Drawing.Size(95, 42);
+            this.btnSağKanat.TabIndex = 9;
+            this.btnSağKanat.Text = "Quaresma";
+            this.btnSağKanat.UseVisualStyleBackColor = true;
+            this.btnSağKanat.Click += new System.EventHandler(this.btnSağKanat_Click);
+            // 
+            // btnForvet
+            // 
+            this.btnForvet.Location = new System.Drawing.Point(712, 539);
+            this.btnForvet.Name = "btnForvet";
+            this.btnForvet.Size = new System.Drawing.Size(95, 42);
+            this.btnForvet.TabIndex = 10;
+            this.btnForvet.Text = "Gomez";
+            this.btnForvet.UseVisualStyleBackColor = true;
+            this.btnForvet.Click += new System.EventHandler(this.btnForvet_Click);
+            // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(1813, 508);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(97, 42);
+            this.button11.TabIndex = 21;
+            this.button11.Text = "Nuer";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // btnForvet2
+            // 
+            this.btnForvet2.Location = new System.Drawing.Point(1134, 438);
+            this.btnForvet2.Name = "btnForvet2";
+            this.btnForvet2.Size = new System.Drawing.Size(97, 42);
+            this.btnForvet2.TabIndex = 22;
+            this.btnForvet2.Text = "Ronaldo";
+            this.btnForvet2.UseVisualStyleBackColor = true;
+            this.btnForvet2.Click += new System.EventHandler(this.btnForvet2_Click);
+            // 
+            // btnSagKanat
+            // 
+            this.btnSagKanat.Location = new System.Drawing.Point(1134, 282);
+            this.btnSagKanat.Name = "btnSagKanat";
+            this.btnSagKanat.Size = new System.Drawing.Size(97, 42);
+            this.btnSagKanat.TabIndex = 23;
+            this.btnSagKanat.Text = "Mbappé";
+            this.btnSagKanat.UseVisualStyleBackColor = true;
+            this.btnSagKanat.Click += new System.EventHandler(this.btnSagKanat_Click);
+            // 
+            // btnSolKanat2
+            // 
+            this.btnSolKanat2.Location = new System.Drawing.Point(1134, 645);
+            this.btnSolKanat2.Name = "btnSolKanat2";
+            this.btnSolKanat2.Size = new System.Drawing.Size(97, 42);
+            this.btnSolKanat2.TabIndex = 24;
+            this.btnSolKanat2.Text = "Neymar";
+            this.btnSolKanat2.UseVisualStyleBackColor = true;
+            this.btnSolKanat2.Click += new System.EventHandler(this.btnSolKanat2_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(688, 500);
+            this.button1.Location = new System.Drawing.Point(1385, 506);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(95, 42);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Marcelo";
+            this.button1.Size = new System.Drawing.Size(97, 42);
+            this.button1.TabIndex = 25;
+            this.button1.Text = "Messi";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(1385, 348);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(97, 42);
+            this.button2.TabIndex = 26;
+            this.button2.Text = "De Bruyne";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btn6Numara2
+            // 
+            this.btn6Numara2.Location = new System.Drawing.Point(1385, 663);
+            this.btn6Numara2.Name = "btn6Numara2";
+            this.btn6Numara2.Size = new System.Drawing.Size(97, 42);
+            this.btn6Numara2.TabIndex = 27;
+            this.btn6Numara2.Text = "Casemiro";
+            this.btn6Numara2.UseVisualStyleBackColor = true;
+            this.btn6Numara2.Click += new System.EventHandler(this.btn6Numara2_Click);
+            // 
+            // btnSagBek2
+            // 
+            this.btnSagBek2.Location = new System.Drawing.Point(1546, 236);
+            this.btnSagBek2.Name = "btnSagBek2";
+            this.btnSagBek2.Size = new System.Drawing.Size(97, 42);
+            this.btnSagBek2.TabIndex = 28;
+            this.btnSagBek2.Text = "Alexander Arnold";
+            this.btnSagBek2.UseVisualStyleBackColor = true;
+            this.btnSagBek2.Click += new System.EventHandler(this.btnSagBek2_Click);
+            // 
+            // btnSagStoper2
+            // 
+            this.btnSagStoper2.Location = new System.Drawing.Point(1546, 398);
+            this.btnSagStoper2.Name = "btnSagStoper2";
+            this.btnSagStoper2.Size = new System.Drawing.Size(97, 42);
+            this.btnSagStoper2.TabIndex = 29;
+            this.btnSagStoper2.Text = "Ramos";
+            this.btnSagStoper2.UseVisualStyleBackColor = true;
+            this.btnSagStoper2.Click += new System.EventHandler(this.btnSagStoper2_Click);
+            // 
+            // btnSolBek2
+            // 
+            this.btnSolBek2.Location = new System.Drawing.Point(1546, 598);
+            this.btnSolBek2.Name = "btnSolBek2";
+            this.btnSolBek2.Size = new System.Drawing.Size(97, 42);
+            this.btnSolBek2.TabIndex = 30;
+            this.btnSolBek2.Text = " Bonucci";
+            this.btnSolBek2.UseVisualStyleBackColor = true;
+            this.btnSolBek2.Click += new System.EventHandler(this.btnSolBek2_Click);
+            // 
+            // btnSolBek3
+            // 
+            this.btnSolBek3.Location = new System.Drawing.Point(1536, 823);
+            this.btnSolBek3.Name = "btnSolBek3";
+            this.btnSolBek3.Size = new System.Drawing.Size(97, 42);
+            this.btnSolBek3.TabIndex = 31;
+            this.btnSolBek3.Text = "Davies";
+            this.btnSolBek3.UseVisualStyleBackColor = true;
+            this.btnSolBek3.Click += new System.EventHandler(this.btnSolBek3_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1599, 1055);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.ClientSize = new System.Drawing.Size(1676, 1055);
+            this.Controls.Add(this.btnSolBek3);
+            this.Controls.Add(this.btnSolBek2);
+            this.Controls.Add(this.btnSagStoper2);
+            this.Controls.Add(this.btnSagBek2);
+            this.Controls.Add(this.btn6Numara2);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.btnÜÇ);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnSolKanat2);
+            this.Controls.Add(this.btnSagKanat);
+            this.Controls.Add(this.btnForvet2);
+            this.Controls.Add(this.button11);
+            this.Controls.Add(this.btnForvet);
+            this.Controls.Add(this.btnSağKanat);
+            this.Controls.Add(this.btn10numara);
+            this.Controls.Add(this.btnSolKanat);
+            this.Controls.Add(this.btn8numara);
+            this.Controls.Add(this.btn6numara);
             this.Controls.Add(this.btnSagBek);
             this.Controls.Add(this.btnSagStoper);
             this.Controls.Add(this.btnSolStoper);
@@ -174,12 +315,23 @@
         private System.Windows.Forms.Button btnSolStoper;
         private System.Windows.Forms.Button btnSagStoper;
         private System.Windows.Forms.Button btnSagBek;
-        private System.Windows.Forms.Button btnÜÇ;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btn6numara;
+        private System.Windows.Forms.Button btn8numara;
+        private System.Windows.Forms.Button btnSolKanat;
+        private System.Windows.Forms.Button btn10numara;
+        private System.Windows.Forms.Button btnSağKanat;
+        private System.Windows.Forms.Button btnForvet;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button btnForvet2;
+        private System.Windows.Forms.Button btnSagKanat;
+        private System.Windows.Forms.Button btnSolKanat2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn6Numara2;
+        private System.Windows.Forms.Button btnSagBek2;
+        private System.Windows.Forms.Button btnSagStoper2;
+        private System.Windows.Forms.Button btnSolBek2;
+        private System.Windows.Forms.Button btnSolBek3;
     }
 }
 

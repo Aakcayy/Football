@@ -17,6 +17,10 @@ namespace Football1
     {
         void trivela(string message);
     }
+    public interface Ipas
+    {
+        void pas(string message);
+    }
     public interface ISut
     {
         void Sut(string message);
@@ -51,70 +55,35 @@ namespace Football1
         {
             MessageBox.Show("Top kapma,top yerdeyken bir oyuncunun topu rakibinden almaya çalışması ve başarmasıdır.");
         }
-        
+        public void pas(string message)
+        {
+            MessageBox.Show("Pas, futbolda oyunculardan birinin topu takım arkadaşına atmasıdır.");
+        }
+
     }
     abstract class Futbolcu:yetenek
     {
-        public string isim, tamadi, mevki,uyruk;
-        public double piyasadegeri;
+        public string isim, tamadi, mevki,uyruk,piyasadegeri;
+        public double boy;
        
-        public  void oyuncu(string isim, string tamadi, string mevki, string uyruk, double piyasadegeri)
+        public  void oyuncu(string isim, string tamadi, string mevki, string uyruk,string piyasadegeri, double boy)
         {
             this.isim = isim;
             this.tamadi = tamadi;
             this.mevki = mevki;
             this.uyruk = uyruk;
             this.piyasadegeri = piyasadegeri;
-           
-
-
-
-         
-           
-        }
+          }
         
     }
 
-    internal class Kaleci : Futbolcu //kaleci aynı zamanda bir futbolcudur
+    internal class Oyuncu : Futbolcu 
     {
        
-        public void Kaleci1(string isim, string tamadi, string mevki, string uyruk, double piyasadegeri)
+        public void oyuncu(string isim, string tamadi, string mevki, string uyruk,string piyasadegeri,double boy)
         {
-
-            DialogResult result = MessageBox.Show("Kaleci özeliğini görmek istiyor  musunuz?", "Oyuncu Profili", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-            if (result == DialogResult.OK)
-            {
-                
-                string bilgi = $"Oyuncu Bilgileri:\n\nİsim: {isim}\nTam adı: {tamadi}\nMevki: {mevki}\nUyruk: {uyruk}\nPiyasa Değeri: {piyasadegeri}.000 €";
+               string bilgi = $"Oyuncu Bilgileri:\n\nİsim: {isim}\nTam adı: {tamadi}\nBaş mevki: {mevki}\nBoy:{boy}\nUyruk: {uyruk}\nPiyasa Değeri: {piyasadegeri} €";
                 MessageBox.Show(bilgi);
-            }
-            else
-            {
-                // Kullanıcı "Hayır" seçeneğini seçerse, isteğinize göre başka bir işlem yapabilirsiniz.
-                Kapma("");
-            }
-
-
         }
-        public void bek1(string isim, string tamadi, string mevki, string uyruk, double piyasadegeri)
-        {
-
-            DialogResult result = MessageBox.Show("Kaleci özeliğini görmek istiyor  musunuz?", "Oyuncu Profili", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-            if (result == DialogResult.OK)
-            {
-
-                string bilgi = $"Oyuncu Bilgileri:\n\nİsim: {isim}\nTam adı: {tamadi}\nMevki: {mevki}\nUyruk: {uyruk}\nPiyasa Değeri: {piyasadegeri}.000 €";
-                MessageBox.Show(bilgi);
-            }
-            else
-            {
-                // Kullanıcı "Hayır" seçeneğini seçerse, isteğinize göre başka bir işlem yapabilirsiniz.
-                Kapma("");
-            }
-
-
-        }
-    }
-    
-
+     }
 }
