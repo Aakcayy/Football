@@ -67,18 +67,6 @@ namespace Football1
             this.piyasadegeri = piyasadegeri;
            
 
-            DialogResult result = MessageBox.Show("Kaleci özeliğini görmek istiyor  musunuz?", "Oyuncu Profili", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-            if (result == DialogResult.OK)
-            {
-                this.oyuncu("Fabri", "Fabri Agusto Ramirez", "Kaleci", "İspanya", 100.000);
-                string bilgi = $"Oyuncu Bilgileri:\n\nİsim: {isim}\nTam adı: {tamadi}\nMevki: {mevki}\nUyruk: {uyruk}\nPiyasa Değeri: {piyasadegeri}.000 €";
-                MessageBox.Show(bilgi);
-            }
-            else
-            {
-                // Kullanıcı "Hayır" seçeneğini seçerse, isteğinize göre başka bir işlem yapabilirsiniz.
-                Kapma("");
-            }
 
 
          
@@ -90,12 +78,43 @@ namespace Football1
     internal class Kaleci : Futbolcu //kaleci aynı zamanda bir futbolcudur
     {
        
-        public Kaleci()
+        public void Kaleci1(string isim, string tamadi, string mevki, string uyruk, double piyasadegeri)
         {
 
-          
+            DialogResult result = MessageBox.Show("Kaleci özeliğini görmek istiyor  musunuz?", "Oyuncu Profili", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (result == DialogResult.OK)
+            {
+                
+                string bilgi = $"Oyuncu Bilgileri:\n\nİsim: {isim}\nTam adı: {tamadi}\nMevki: {mevki}\nUyruk: {uyruk}\nPiyasa Değeri: {piyasadegeri}.000 €";
+                MessageBox.Show(bilgi);
+            }
+            else
+            {
+                // Kullanıcı "Hayır" seçeneğini seçerse, isteğinize göre başka bir işlem yapabilirsiniz.
+                Kapma("");
+            }
+
+
+        }
+        public void bek1(string isim, string tamadi, string mevki, string uyruk, double piyasadegeri)
+        {
+
+            DialogResult result = MessageBox.Show("Kaleci özeliğini görmek istiyor  musunuz?", "Oyuncu Profili", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (result == DialogResult.OK)
+            {
+
+                string bilgi = $"Oyuncu Bilgileri:\n\nİsim: {isim}\nTam adı: {tamadi}\nMevki: {mevki}\nUyruk: {uyruk}\nPiyasa Değeri: {piyasadegeri}.000 €";
+                MessageBox.Show(bilgi);
+            }
+            else
+            {
+                // Kullanıcı "Hayır" seçeneğini seçerse, isteğinize göre başka bir işlem yapabilirsiniz.
+                Kapma("");
+            }
+
 
         }
     }
+    
 
 }

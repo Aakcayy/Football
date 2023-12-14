@@ -60,6 +60,7 @@
             this.btnSolBek.TabIndex = 1;
             this.btnSolBek.Text = "Adriano";
             this.btnSolBek.UseVisualStyleBackColor = true;
+            this.btnSolBek.Click += new System.EventHandler(this.btnSolBek_Click);
             // 
             // btnSolStoper
             // 

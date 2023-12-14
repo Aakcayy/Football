@@ -43,11 +43,15 @@ namespace Football
                  kaleci.oyuncu("Fabri", "Fabri Agusto Ramirez", "Kaleci", "İspanya", 100);
              }*/
 
-            kaleci.oyuncu("Fabri", "Fabri Agusto Ramirez", "Kaleci", "İspanya", 100);
-
+            kaleci.Kaleci1("Fabri", "Fabri Agusto Ramirez", "Kaleci", "İspanya", 100.000);
+           
 
 
         }
 
+        private void btnSolBek_Click(object sender, EventArgs e)
+        {
+            kaleci.bek1("Beck", "Fabri Agusto Ramirez", "Kaleci", "İspanya", 100.000);
+        }
     }
 }
